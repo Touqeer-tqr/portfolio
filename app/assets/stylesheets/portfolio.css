@@ -8,13 +8,17 @@
 
 .grid-wrap {
 	margin: 10px auto 0;
-	width: 100%;
+	width: 75%;
+    display: -webkit-box;
 	padding: 0;
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
 }
 
 .grid {
+	width: 50%;
+    height: 800px;
+    overflow-y: auto;
 	position: relative;
 	-webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
 	transition: all 0.5s cubic-bezier(0,0,0.25,1);

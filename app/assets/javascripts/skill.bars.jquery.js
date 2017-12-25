@@ -3,7 +3,16 @@
  * Author: @umarwebdeveloper
  * Licensed under the MIT license
  */
- 
+ function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+}
+   
 (function ( $ ) {
  
     $.fn.skillBars = function( options ) {
