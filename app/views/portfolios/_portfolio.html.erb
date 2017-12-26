@@ -3,71 +3,220 @@
 	<div class="title-wthree">
 		<h5 class="title-w3"><span>05</span>Portfolio</h5>
 		<div class="clearfix"></div>
-	</div>>
+	</div>
 	<p class="text-center slideanim">My Recent Projects , Just "Click" on them to know More.</p>
 	<section class="vertical" id="grid3d">
 		<div class="grid-wrap">
-			<div class="grid" style="width: 50%;">
-				<figure><%= image_tag "1.jpg", class: "slideanim", alt: "img01" %></figure>
-				<figure><%= image_tag "2.jpg", class: "slideanim", alt: "img05" %></figure>
-				<figure><%= image_tag "3.jpg", class: "slideanim", alt: "img08" %></figure>
-				<figure><%= image_tag "4.jpg", class: "slideanim", alt: "img02" %></figure>
-			</div>
-			<div class="grid" style="width: 50%;">
-				<figure><%= image_tag "6.jpg", class: "slideanim", alt: "img03" %></figure>
-				<figure><%= image_tag "7.jpg", class: "slideanim", alt: "img09" %></figure>
-				<figure><%= image_tag "8.jpg", class: "slideanim", alt: "img06" %></figure>
-				<figure><%= image_tag "9.jpg", class: "slideanim", alt: "img07" %></figure>
+			<div class="grid">
+				<h3>Professional</h3>
+				<div class="col-xs-12">
+					<figure><%= image_tag "SouqOfQatar1.png", class: "slideanim" %></figure>
+					<figure><%= image_tag "ANA1.png", class: "slideanim" %></figure>
+					<figure><%= image_tag "simulyx1.png", class: "slideanim" %></figure>
+					<figure><%= image_tag "propertynerd1.png", class: "slideanim" %></figure>
+				</div>
+				<h3>Personal</h3>
+				<div class="col-xs-12">
+					<figure><%= image_tag "foodicted1.png", class: "slideanim" %></figure>
+					<figure><%= image_tag "mapmaker1.png", class: "slideanim" %></figure>
+				</div>
 			</div>
 		</div><!-- /grid-wrap -->
 		<div class="content">
 			<div>
-				<div class="content-img"><%= image_tag "1-1.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">SouqOfQatar</h3>
-				<p class="content-text">Developed Product Matching Site in Team with proper responsiveness and fast query execution on 1 Million Data.</p>
+				<div class="container">
+				  	<div id="SouqOfQatar" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#SouqOfQatar" data-slide-to="0" class="active"></li>
+					      <li data-target="#SouqOfQatar" data-slide-to="1"></li>
+					      <li data-target="#SouqOfQatar" data-slide-to="2"></li>
+					      <li data-target="#SouqOfQatar" data-slide-to="3"></li>
+					      <li data-target="#SouqOfQatar" data-slide-to="4"></li>
+					      <li data-target="#SouqOfQatar" data-slide-to="5"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					    	<div class="item active"><%= image_tag "SouqOfQatar1.png" %></div>
+					      	<div class="item"><%= image_tag "SouqOfQatar2.png" %></div>
+					      	<div class="item"><%= image_tag "SouqOfQatar3.png" %></div>
+					      	<div class="item"><%= image_tag "SouqOfQatar4.png" %></div>
+					      	<div class="item"><%= image_tag "SouqOfQatar5.png" %></div>
+					      	<div class="item"><%= image_tag "SouqOfQatar6.png" %></div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#SouqOfQatar" data-slide="prev">
+					      <span class="fa fa-arrow-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#SouqOfQatar" data-slide="next">
+					      <span class="fa fa-arrow-right"></span>
+					    </a>
+				  	</div>
+				</div>
+				<h3 class="content-text"><a target="_blank" href="http://souqofqatar.com/">SouqOfQatar</a></h3>
+				<p class="content-text">Developed Product Matching Site in Team with proper responsiveness and fast query execution on 1 Million Data with MongoDB.</p>
 			</div>
 			<div>
-				<div class="content-img"><%= image_tag "2-2.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">404 Error Page</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="container">
+				  	<div id="ANA" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#ANA" data-slide-to="0" class="active"></li>
+					      <li data-target="#ANA" data-slide-to="1"></li>
+					      <li data-target="#ANA" data-slide-to="2"></li>
+					      <li data-target="#ANA" data-slide-to="3"></li>
+					      <li data-target="#ANA" data-slide-to="4"></li>
+					      <li data-target="#ANA" data-slide-to="5"></li>
+					      <li data-target="#ANA" data-slide-to="6"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					    	<div class="item active"><%= image_tag "ANA1.png" %></div>
+					      	<div class="item"><%= image_tag "ANA2.png" %></div>
+					      	<div class="item"><%= image_tag "ANA3.png" %></div>
+					      	<div class="item"><%= image_tag "ANA4.png" %></div>
+					      	<div class="item"><%= image_tag "ANA5.png" %></div>
+					      	<div class="item"><%= image_tag "ANA6.png" %></div>
+					      	<div class="item"><%= image_tag "ANA7.png" %></div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#ANA" data-slide="prev">
+					      <span class="fa fa-arrow-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#ANA" data-slide="next">
+					      <span class="fa fa-arrow-right"></span>
+					    </a>
+				  	</div>
+				</div>
+				<h3 class="content-text"><a target="_blank" href="#">ANA</a></h3>
+				<p class="content-text">Worked on Admin panel, GGoogle Mpas, geofencing and mobile site API development</p>
 			</div>
 			<div>
-				<div class="content-img"><%= image_tag "3-3.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Credit Card Validation</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="container">
+				  	<div id="simulyx" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#simulyx" data-slide-to="0" class="active"></li>
+					      <li data-target="#simulyx" data-slide-to="1"></li>
+					      <li data-target="#simulyx" data-slide-to="2"></li>
+					      <li data-target="#simulyx" data-slide-to="3"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					    	<div class="item active"><%= image_tag "simulyx1.png" %></div>
+					      	<div class="item"><%= image_tag "simulyx2.png" %></div>
+					      	<div class="item"><%= image_tag "simulyx3.png" %></div>
+					      	<div class="item"><%= image_tag "simulyx4.png" %></div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#simulyx" data-slide="prev">
+					      <span class="fa fa-arrow-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#simulyx" data-slide="next">
+					      <span class="fa fa-arrow-right"></span>
+					    </a>
+				  	</div>
+				</div>
+				<h3 class="content-text"><a target="_blank" href="http://simulyx.herokuapp.com/">Simulyx</a></h3>
+				<p class="content-text">Freelancer Type Website for University</p>
 			</div>
 			<div>
-				<div class="content-img"><%= image_tag "4-4.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Eshop Product Detail Widget</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="container">
+				  	<div id="propertynerd" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#propertynerd" data-slide-to="0" class="active"></li>
+					      <li data-target="#propertynerd" data-slide-to="1"></li>
+					      <li data-target="#propertynerd" data-slide-to="2"></li>
+					      <li data-target="#propertynerd" data-slide-to="3"></li>
+					      <li data-target="#propertynerd" data-slide-to="4"></li>
+					      <li data-target="#propertynerd" data-slide-to="5"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					    	<div class="item active"><%= image_tag "propertynerd1.png" %></div>
+					      	<div class="item"><%= image_tag "propertynerd2.png" %></div>
+					      	<div class="item"><%= image_tag "propertynerd3.png" %></div>
+					      	<div class="item"><%= image_tag "propertynerd4.png" %></div>
+					      	<div class="item"><%= image_tag "propertynerd5.png" %></div>
+					      	<div class="item"><%= image_tag "propertynerd6.png" %></div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#propertynerd" data-slide="prev">
+					      <span class="fa fa-arrow-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#propertynerd" data-slide="next">
+					      <span class="fa fa-arrow-right"></span>
+					    </a>
+				  	</div>
+				</div>
+				<h3 class="content-text"><a target="_blank" href="https://www.propertynerd.com.au">Propertynerd</a></h3>
+				<p class="content-text">Worked on Individual Task with team colaboration.</p>
 			</div>
 			<div>
-				<div class="content-img"><%= image_tag "5-5.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Model Profile Widget</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="container">
+				  	<div id="foodicted" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#foodicted" data-slide-to="0" class="active"></li>
+					      <li data-target="#foodicted" data-slide-to="1"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					    	<div class="item active"><%= image_tag "foodicted1.png" %></div>
+					      	<div class="item"><%= image_tag "foodicted2.png" %></div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#foodicted" data-slide="prev">
+					      <span class="fa fa-arrow-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#foodicted" data-slide="next">
+					      <span class="fa fa-arrow-right"></span>
+					    </a>
+				  	</div>
+				</div>
+				<h3 class="content-text"><a target="_blank" href="http://foodicted.herokuapp.com/">Foodicted</a></h3>
+				<p class="content-text">Developed Responsive website that gets food recipes from different sites.</p>
 			</div>
 			<div>
-				<div class="content-img"><%= image_tag "6-6.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Flat Under Construction</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div>
-				<div class="content-img"><%= image_tag "7-7.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Impressive Under Construction</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div>
-				<div class="content-img"><%= image_tag "8-8.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Profile Widget</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div>
-				<div class="content-img"><%= image_tag "9-9.jpg", class: "img-responsive", alt: "my projects" %></div>
-				<h3 class="content-text">Travel Reservation Widget</h3>
-				<p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<div class="container">
+				  	<div id="mapmaker" class="carousel slide" data-ride="carousel">
+					    <!-- Indicators -->
+					    <ol class="carousel-indicators">
+					      <li data-target="#mapmaker" data-slide-to="0" class="active"></li>
+					      <li data-target="#mapmaker" data-slide-to="1"></li>
+					    </ol>
+
+					    <!-- Wrapper for slides -->
+					    <div class="carousel-inner">
+					    	<div class="item active"><%= image_tag "mapmaker1.png" %></div>
+					    	<div class="item"><%= image_tag "mapmaker2.png" %></div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#mapmaker" data-slide="prev">
+					      <span class="fa fa-arrow-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#mapmaker" data-slide="next">
+					      <span class="fa fa-arrow-right"></span>
+					    </a>
+				  	</div>
+				</div>
+				<h3 class="content-text"><a target="_blank" href="https://mapdrawer.herokuapp.com/">Map Maker</a></h3>
+				<p class="content-text">A simple site to draw polygons on map and store them on Database.</p>
 			</div>
 			<span class="loading"></span>
-			<span class="icon close-content"></span>
+			<span class="icon close-content"><i class="fa fa-times-circle-o"></i></span>
 		</div>
 	</section>
 </div>

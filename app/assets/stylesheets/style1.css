@@ -1274,6 +1274,7 @@ h3.subheading-agileits-w3layouts {
 .w3l-social ul li a.fa.fa-linkedin,
 .w3l-social ul li a.fa.fa-twitter,
 .w3l-social ul li a.fa.fa-google-plus {
+	font-size: 40px;
 	width: 35px;
 	color: #ffffff;
 	border-radius: 50%;
@@ -1439,7 +1440,7 @@ h3.subheading-agileits-w3layouts {
 		min-height: 429px;
 	}
 	.navbar-nav>li{
-		margin: 0 14px;
+		margin: 0 12px;
 	}
 }
 

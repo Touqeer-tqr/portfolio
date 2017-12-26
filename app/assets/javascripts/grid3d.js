@@ -28,7 +28,10 @@
 		// grid element
 		this.grid = this.gridWrap.querySelector( 'div.grid' );
 		// main grid items
-		this.gridItems = [].slice.call( this.grid.children );
+		this.gridItems = Array.prototype.concat.call([].slice.call( this.grid.children[1].children ), [].slice.call( this.grid.children[3].children ));
+		// remove h3 elements
+		// this.gridItems.splice(0,1);
+		// this.gridItems.splice(4,1);
 		// default sizes for grid items
 		this.itemSize = { width : this.gridItems[0].offsetWidth, height : this.gridItems[0].offsetHeight };
 		// content
@@ -233,7 +236,10 @@
 			var gridOffset = getOffset( this.grid );
 			
 			this.placeholder.style.left = Number( -1 * ( gridOffset.left - scrollX() ) ) + 'px';
-			this.placeholder.style.top = Number( -1 * ( gridOffset.top - scrollY() ) ) + 'px';
+			// var top_scroll_v = gridOffset.top - scrollY();
+			// if (top_scroll_v > 0) { top_scroll_v = top_scroll_v * -1 }
+			// this.placeholder.style.top = Number( 4 * top_scroll_v ) + 'px';
+			this.placeholder.style.top = -50+'%';
 			// set the placeholders width to windows width and height to windows height
 			this.placeholder.style.width = getViewportW() + 'px';
 			this.placeholder.style.height = getViewportH() + 'px';
