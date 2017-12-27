@@ -28,13 +28,13 @@ body{
 }
 #Choco_left_arrow{
 	float:left;
-	background-image:url(left.png)!important;
+	background-image:url('<%= asset_path("left.png") %>')!important;
 	background-position:12%;
 	left:-20%;
 }
 #Choco_right_arrow{
 	float:right;
-	background-image:url(right.png)!important;
+	background-image:url('<%= asset_path("right.png") %>')!important;
 	background-position:88%;
 	left:20%;
 }
@@ -52,7 +52,7 @@ body{
 	text-align:center;
 	width:800px;
 	height:600px;
-	/*background:url(ajax-loader.gif) center center no-repeat;*/
+	/*background:url('<%= asset_path("ajax-loader.gif") %>') center center no-repeat;*/
 }
 #Choco_container_description{
 	padding:0;
@@ -85,7 +85,7 @@ body{
 #Choco_close{
 	width:32px;
 	height:32px;
-	background-image:url(close.png)!important;
+	background-image:url('<%= asset_path("close.png") %>')!important;
 	background-repeat:no-repeat;
 	z-index:1002;
 	cursor:pointer;
@@ -95,7 +95,7 @@ body{
 #Choco_loading{
 	width:9px;
 	height:11px;
-	background-image:url(loading.gif);
+	background-image:url('<%= asset_path("loading.gif") %>');
 	background-repeat:no-repeat;
 	z-index:1002;
 	cursor:pointer;

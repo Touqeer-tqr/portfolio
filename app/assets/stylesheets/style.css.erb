@@ -34,7 +34,7 @@ body a:hover,body a:focus{
 } 
 /*-- banner --*/  
 .banner{ 
-	background:url(bg.jpg)no-repeat center 0px;
+	background:url('<%= asset_path("bg.jpg") %>')no-repeat center 0px;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;    
@@ -794,7 +794,7 @@ a.wthree-more:hover > span:nth-child(10) {
 /*-- //Skills bar effects --*/ 
 /*-- stats --*/
 .stats {
-    background: url(bg.jpg)no-repeat center fixed;
+    background: url('<%= asset_path("bg.jpg") %>')no-repeat center fixed;
     background-size: cover; 
 }  
 .stats-info {
