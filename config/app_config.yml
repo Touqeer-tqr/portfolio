@@ -1,0 +1,19 @@
+development:
+  mail_config:
+    port: 587
+    domain: touqeer-ahmad.herokuapp.com
+    address: smtp.gmail.com
+    username: tqr093gmail.com
+    password: tqr@winterbird7*
+    authentication: plain
+    enable_starttls_auto: true
+
+production:
+  mail_config:
+    port: 587
+    domain: touqeer-ahmad.herokuapp.com
+    address: smtp.gmail.com
+    username: tqr093gmail.com
+    password: tqr@winterbird7*
+    authentication: plain
+    enable_starttls_auto: true
