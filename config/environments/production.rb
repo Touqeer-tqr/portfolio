@@ -14,6 +14,21 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+  config.action_mailer.default_url_options = { :host => APP_CONFIG[:mail_config][:domain] }  
+  config.action_mailer.delivery_method = :smtp  
+  config.action_mailer.perform_deliveries = true  
+  config.action_mailer.raise_delivery_errors = false  
+  config.action_mailer.default :charset => "utf-8"  
+  config.action_mailer.smtp_settings = {  
+    address: APP_CONFIG[:mail_config][:address],
+    port: APP_CONFIG[:mail_config][:port],
+    domain: APP_CONFIG[:mail_config][:domain],
+    authentication: APP_CONFIG[:mail_config][:authentication],
+    enable_starttls_auto: APP_CONFIG[:mail_config][:enable_starttls_auto],
+    user_name: APP_CONFIG[:mail_config][:username],
+    password: APP_CONFIG[:mail_config][:password]
+  }
+
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like

@@ -16,9 +16,10 @@
 			<div class="botttom-nav-agileits">
 				<div class="w3l-social">
 					<ul>
+						<li><a href="https://plus.google.com/u/0/+TouqeerAhmad-tqr" alt="google plus touqeer-ahmad-tqr" target="_blank" class="fa fa-google-plus"></a></li>
 						<li><a href="https://www.linkedin.com/in/touqeer-ahmad/" alt="linkedin touqeer ahmad tqr" target="_blank" class="fa fa-linkedin"></a></li>
 						<li><a href="https://www.facebook.com/tqr093" alt="facebook touqeer ahmad tqr" target="_blank" class="fa fa-facebook"></a></li>
-						<li><a href="https://plus.google.com/u/0/+TouqeerAhmad-tqr" alt="google plus touqeer-ahmad-tqr" target="_blank" class="fa fa-google-plus"></a></li>
+						<li><a href="https://github.com/Touqeer-tqr" alt="github touqeer-tqr" target="_blank" class="fa fa-github"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -30,21 +31,21 @@
 		<div class="container">
 			<div class="col-md-6 contact-form agile_inner_grids">
 				<h5 class="title-w3">Say Hello</h5>
-				<%= form_tag("portfolios_contact_me_path", method: "post") do %>
+				<%= form_tag(portfolios_contact_me_path, method: "post", remote: true) do %>
 					<div class="fields-grid">
 						<div class="styled-input">
-							<input type="text" name="Full Name" placeholder="Name" required="">
+							<input type="text" name="name" placeholder="Name" required="">
 						</div>
 						<div class="styled-input">
-							<input type="email" name="Email" placeholder="Email" required="">
+							<input type="email" name="email" placeholder="Email" required="">
 						</div>
 						<div class="styled-input">
-							<input type="text" name="Subject" placeholder="Subject" required="">
+							<input type="text" name="subject" placeholder="Subject" required="">
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="styled-input textarea-grid">
-						<textarea name="Message" placeholder="Message" required=""></textarea>
+						<textarea name="message" placeholder="Message" required=""></textarea>
 					</div>
 					<input type="submit" value="Send">
 				<% end %>
