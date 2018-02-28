@@ -154,14 +154,15 @@ header {
 	height: 95px;
 }
 
-.banner-text-w3-agileits h5 {
+.banner-text-w3-agileits span {
 	color: #fff;
-	font-size: 1.7em;
 	letter-spacing: 3px;
 	font-weight: 400;
 }
-
-.banner-text-w3-agileits h2 {
+.banner-text-w3-agileits > p > span {
+	font-size: 1.7em;
+}
+.banner-text-w3-agileits h1 {
 	font-size: 3em;
 	letter-spacing: 8px;
 	font-weight: 500;
@@ -170,7 +171,7 @@ header {
 	margin: 0.2em 0 0.6em;
 }
 
-.banner-text-w3-agileits h2:after {
+.banner-text-w3-agileits h1:after {
 	position: absolute;
 	content: "";
 	width: 150px;
@@ -180,7 +181,7 @@ header {
 	background: -webkit-linear-gradient(red, orange);
 }
 
-.banner-text-w3-agileits h2 span {
+.banner-text-w3-agileits h1 span {
 	background: -webkit-linear-gradient(red, orange);
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent;
@@ -1273,7 +1274,6 @@ h3.subheading-agileits-w3layouts {
 .w3l-social ul li a.fa.fa-google-plus {
 	font-size: 40px;
 	width: 35px;
-	color: #ffffff;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -1285,21 +1285,33 @@ h3.subheading-agileits-w3layouts {
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
+.w3l-social ul li a.fa.fa-facebook{
+	color: #3A5795;
+}
+.w3l-social ul li a.fa.fa-twitter{
+	color: #088FD1;
+}
+.w3l-social ul li a.fa.fa-google-plus{
+	color: #A52728;
+}
+.w3l-social ul li a.fa.fa-linkedin{
+	color: #026BA5;
+}
 
 .w3l-social ul li a.fa.fa-facebook:hover {
-	color: #3b5998;
+	color: #6785C7;
 }
 
 .w3l-social ul li a.fa.fa-twitter:hover {
-	color: #1da1f2;
+	color: #32CAFC;
 }
 
 .w3l-social ul li a.fa.fa-google-plus:hover {
-	color: #dd4b39;
+	color: #CC3731;
 }
 
 .w3l-social ul li a.fa.fa-linkedin:hover{
-	color: #6893b9;
+	color: #1B93D5;
 }
 
 .w3l-social ul li a:hover,
@@ -1445,10 +1457,10 @@ h3.subheading-agileits-w3layouts {
 }
 
 @media(max-width:1080px) {
-	.banner-text-w3-agileits h5 {
+	.banner-text-w3-agileits > p > span{
 		font-size: 1.6em;
 	}
-	.banner-text-w3-agileits h2 {
+	.banner-text-w3-agileits h1 {
 		font-size: 2.7em;
 		letter-spacing: 7px;
 		margin: 0.1em 0 0.6em;
@@ -1546,14 +1558,16 @@ h3.subheading-agileits-w3layouts {
 		margin-bottom: 16px;
 		font-size: 14px;
 	}
-	.banner-text-w3-agileits h2 {
+	.banner-text-w3-agileits h1 {
 		font-size: 2.0em;
 		letter-spacing: 5px;
 		margin: 0.1em 0 0.4em;
 	}
-	.banner-text-w3-agileits h5 {
-		font-size: 1.5em;
+	.banner-text-w3-agileits span {
 		letter-spacing: 2px;
+	}
+	.banner-text-w3-agileits > p > span {
+		font-size: 1.5em;
 	}
 	.banner-text-w3-agileits p {
 		font-size: 0.8em;
@@ -1618,7 +1632,7 @@ h3.subheading-agileits-w3layouts {
 	.bar-grids {
 		margin-top: 1em;
 	}
-	.banner-text-w3-agileits h2:after {
+	.banner-text-w3-agileits h1:after {
 		width: 105px
 	}
 	.ror-pic{
@@ -1956,11 +1970,13 @@ h3.subheading-agileits-w3layouts {
 }
 
 @media(max-width:440px) {
-	.banner-text-w3-agileits h5 {
-	    font-size: 1.2em;
+	.banner-text-w3-agileits span {
 	    letter-spacing: 1px;
 	}
-	.banner-text-w3-agileits h2 {
+	.banner-text-w3-agileits > p > span {
+	    font-size: 1.2em;
+	}
+	.banner-text-w3-agileits h1 {
 		font-size: 1.5em;
 		letter-spacing: 2.5px;
 	}
@@ -1968,7 +1984,7 @@ h3.subheading-agileits-w3layouts {
 		letter-spacing: 1.6px;
 		padding: 4px 10px;
 	}
-	.banner-text-w3-agileits h2:after {
+	.banner-text-w3-agileits h1:after {
 		width: 75px
 	}
 	.botton a {
@@ -2062,7 +2078,7 @@ h3.subheading-agileits-w3layouts {
 	.about-w3layouts {
 		padding-bottom: 69em;
 	}
-	.banner-text-w3-agileits h2{
+	.banner-text-w3-agileits h1{
 		font-size: 1.5em;
 		letter-spacing: 2px;
 	}
@@ -2070,7 +2086,7 @@ h3.subheading-agileits-w3layouts {
 	    letter-spacing: 1.5px;
 	    padding: 4px 8px;
 	}
-	.banner-text-w3-agileits h2:after {
+	.banner-text-w3-agileits h1:after {
 	    width: 74px;
 	}
 	.person-info-agileits-w3layouts {
