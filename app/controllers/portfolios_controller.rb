@@ -12,8 +12,8 @@ class PortfoliosController < ApplicationController
   end
 
   def contact_me
-    p '*'*100
-    p UserMailer.send_email(params).deliver_later
+    UserMailer.send_email(params).deliver_later
+    render :layout => false 
   end
 
 end
