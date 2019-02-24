@@ -10,211 +10,25 @@
 			<div class="grid">
 				<h3>Professional</h3>
 				<div class="col-xs-12">
-					<figure><%= image_tag "SouqOfQatar1.png", class: "slideanim" %></figure>
-					<figure><%= image_tag "ANA1.png", class: "slideanim" %></figure>
-					<figure><%= image_tag "simulyx1.png", class: "slideanim" %></figure>
-					<figure><%= image_tag "propertynerd1.png", class: "slideanim" %></figure>
+					<% @profesional_projects.each do |project| %>
+						<figure><%= image_tag project[:images][0], class: "slideanim" %></figure>
+					<% end %>
 				</div>
 				<h3>Personal</h3>
 				<div class="col-xs-12">
-					<figure><%= image_tag "foodicted1.png", class: "slideanim" %></figure>
-					<figure><%= image_tag "mapmaker1.png", class: "slideanim" %></figure>
+					<% @personal_projects.each do |project| %>
+						<figure><%= image_tag project[:images][0], class: "slideanim" %></figure>
+					<% end %>
 				</div>
 			</div>
 		</div><!-- /grid-wrap -->
 		<div class="content">
-			<div>
-				<div class="container">
-				  	<div id="SouqOfQatar" class="carousel slide" data-ride="carousel">
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#SouqOfQatar" data-slide-to="0" class="active"></li>
-					      <li data-target="#SouqOfQatar" data-slide-to="1"></li>
-					      <li data-target="#SouqOfQatar" data-slide-to="2"></li>
-					      <li data-target="#SouqOfQatar" data-slide-to="3"></li>
-					      <li data-target="#SouqOfQatar" data-slide-to="4"></li>
-					      <li data-target="#SouqOfQatar" data-slide-to="5"></li>
-					    </ol>
-
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					    	<div class="item active"><%= image_tag "SouqOfQatar1.png" %></div>
-					      	<div class="item"><%= image_tag "SouqOfQatar2.png" %></div>
-					      	<div class="item"><%= image_tag "SouqOfQatar3.png" %></div>
-					      	<div class="item"><%= image_tag "SouqOfQatar4.png" %></div>
-					      	<div class="item"><%= image_tag "SouqOfQatar5.png" %></div>
-					      	<div class="item"><%= image_tag "SouqOfQatar6.png" %></div>
-					    </div>
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control" href="#SouqOfQatar" data-slide="prev">
-					      <span class="fa fa-arrow-left"></span>
-					    </a>
-					    <a class="right carousel-control" href="#SouqOfQatar" data-slide="next">
-					      <span class="fa fa-arrow-right"></span>
-					    </a>
-				  	</div>
-				</div>
-				<h3 class="content-text"><a target="_blank" href="http://souqofqatar.com/">SouqOfQatar</a></h3>
-				<p class="content-text">Developed Product Matching Site in Team with proper responsiveness and fast query execution on 1 Million Data with MongoDB.</p>
-			</div>
-			<div>
-				<div class="container">
-				  	<div id="ANA" class="carousel slide" data-ride="carousel">
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#ANA" data-slide-to="0" class="active"></li>
-					      <li data-target="#ANA" data-slide-to="1"></li>
-					      <li data-target="#ANA" data-slide-to="2"></li>
-					      <li data-target="#ANA" data-slide-to="3"></li>
-					      <li data-target="#ANA" data-slide-to="4"></li>
-					      <li data-target="#ANA" data-slide-to="5"></li>
-					      <li data-target="#ANA" data-slide-to="6"></li>
-					    </ol>
-
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					    	<div class="item active"><%= image_tag "ANA1.png" %></div>
-					      	<div class="item"><%= image_tag "ANA2.png" %></div>
-					      	<div class="item"><%= image_tag "ANA3.png" %></div>
-					      	<div class="item"><%= image_tag "ANA4.png" %></div>
-					      	<div class="item"><%= image_tag "ANA5.png" %></div>
-					      	<div class="item"><%= image_tag "ANA6.png" %></div>
-					      	<div class="item"><%= image_tag "ANA7.png" %></div>
-					    </div>
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control" href="#ANA" data-slide="prev">
-					      <span class="fa fa-arrow-left"></span>
-					    </a>
-					    <a class="right carousel-control" href="#ANA" data-slide="next">
-					      <span class="fa fa-arrow-right"></span>
-					    </a>
-				  	</div>
-				</div>
-				<h3 class="content-text"><a target="_blank" href="#">ANA</a></h3>
-				<p class="content-text">Worked on Admin panel, GGoogle Mpas, geofencing and mobile site API development</p>
-			</div>
-			<div>
-				<div class="container">
-				  	<div id="simulyx" class="carousel slide" data-ride="carousel">
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#simulyx" data-slide-to="0" class="active"></li>
-					      <li data-target="#simulyx" data-slide-to="1"></li>
-					      <li data-target="#simulyx" data-slide-to="2"></li>
-					      <li data-target="#simulyx" data-slide-to="3"></li>
-					    </ol>
-
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					    	<div class="item active"><%= image_tag "simulyx1.png" %></div>
-					      	<div class="item"><%= image_tag "simulyx2.png" %></div>
-					      	<div class="item"><%= image_tag "simulyx3.png" %></div>
-					      	<div class="item"><%= image_tag "simulyx4.png" %></div>
-					    </div>
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control" href="#simulyx" data-slide="prev">
-					      <span class="fa fa-arrow-left"></span>
-					    </a>
-					    <a class="right carousel-control" href="#simulyx" data-slide="next">
-					      <span class="fa fa-arrow-right"></span>
-					    </a>
-				  	</div>
-				</div>
-				<h3 class="content-text"><a target="_blank" href="http://simulyx.herokuapp.com/">Simulyx</a></h3>
-				<p class="content-text">Freelancer Type Website for University</p>
-			</div>
-			<div>
-				<div class="container">
-				  	<div id="propertynerd" class="carousel slide" data-ride="carousel">
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#propertynerd" data-slide-to="0" class="active"></li>
-					      <li data-target="#propertynerd" data-slide-to="1"></li>
-					      <li data-target="#propertynerd" data-slide-to="2"></li>
-					      <li data-target="#propertynerd" data-slide-to="3"></li>
-					      <li data-target="#propertynerd" data-slide-to="4"></li>
-					      <li data-target="#propertynerd" data-slide-to="5"></li>
-					    </ol>
-
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					    	<div class="item active"><%= image_tag "propertynerd1.png" %></div>
-					      	<div class="item"><%= image_tag "propertynerd2.png" %></div>
-					      	<div class="item"><%= image_tag "propertynerd3.png" %></div>
-					      	<div class="item"><%= image_tag "propertynerd4.png" %></div>
-					      	<div class="item"><%= image_tag "propertynerd5.png" %></div>
-					      	<div class="item"><%= image_tag "propertynerd6.png" %></div>
-					    </div>
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control" href="#propertynerd" data-slide="prev">
-					      <span class="fa fa-arrow-left"></span>
-					    </a>
-					    <a class="right carousel-control" href="#propertynerd" data-slide="next">
-					      <span class="fa fa-arrow-right"></span>
-					    </a>
-				  	</div>
-				</div>
-				<h3 class="content-text"><a target="_blank" href="https://www.propertynerd.com.au">Propertynerd</a></h3>
-				<p class="content-text">Worked on Individual Task with team colaboration.</p>
-			</div>
-			<div>
-				<div class="container">
-				  	<div id="foodicted" class="carousel slide" data-ride="carousel">
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#foodicted" data-slide-to="0" class="active"></li>
-					      <li data-target="#foodicted" data-slide-to="1"></li>
-					    </ol>
-
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					    	<div class="item active"><%= image_tag "foodicted1.png" %></div>
-					      	<div class="item"><%= image_tag "foodicted2.png" %></div>
-					    </div>
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control" href="#foodicted" data-slide="prev">
-					      <span class="fa fa-arrow-left"></span>
-					    </a>
-					    <a class="right carousel-control" href="#foodicted" data-slide="next">
-					      <span class="fa fa-arrow-right"></span>
-					    </a>
-				  	</div>
-				</div>
-				<h3 class="content-text"><a target="_blank" href="http://foodicted.herokuapp.com/">Foodicted</a></h3>
-				<p class="content-text">Developed Responsive website that gets food recipes from different sites.</p>
-			</div>
-			<div>
-				<div class="container">
-				  	<div id="mapmaker" class="carousel slide" data-ride="carousel">
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#mapmaker" data-slide-to="0" class="active"></li>
-					      <li data-target="#mapmaker" data-slide-to="1"></li>
-					    </ol>
-
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					    	<div class="item active"><%= image_tag "mapmaker1.png" %></div>
-					    	<div class="item"><%= image_tag "mapmaker2.png" %></div>
-					    </div>
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control" href="#mapmaker" data-slide="prev">
-					      <span class="fa fa-arrow-left"></span>
-					    </a>
-					    <a class="right carousel-control" href="#mapmaker" data-slide="next">
-					      <span class="fa fa-arrow-right"></span>
-					    </a>
-				  	</div>
-				</div>
-				<h3 class="content-text"><a target="_blank" href="https://mapdrawer.herokuapp.com/">Map Maker</a></h3>
-				<p class="content-text">A simple site to draw polygons on map and store them on Database.</p>
-			</div>
+			<% @profesional_projects.each do |project| %>
+				<%= render partial: 'portfolios/project', locals: {project: project} %>
+			<% end %>
+			<% @personal_projects.each do |project| %>
+				<%= render partial: 'portfolios/project', locals: {project: project} %>
+			<% end %>
 			<span class="loading"></span>
 			<span class="icon close-content"><i class="fa fa-times-circle-o"></i></span>
 		</div>

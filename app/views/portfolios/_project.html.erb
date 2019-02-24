@@ -1,0 +1,31 @@
+<div>
+  <div class="container">
+      <div id="<%= project[:name] %>" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <% project[:images].each_with_index do |image_name, index| %>
+            <li data-target="#<%= project[:name] %>" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+          <% end %>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <% project[:images].each_with_index do |image_name, index| %>
+            <div class="item <%= 'active' if index == 0 %>"><%= image_tag image_name %></div>
+          <% end %>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#<%= project[:name] %>" data-slide="prev">
+          <span class="fa fa-arrow-left"></span>
+        </a>
+        <a class="right carousel-control" href="#<%= project[:name] %>" data-slide="next">
+          <span class="fa fa-arrow-right"></span>
+        </a>
+      </div>
+  </div>
+  <h3 class="content-text">
+    <%= link_to project[:name], project[:url], target: "_blank" %>
+  </h3>
+  <p class="content-text">Developed Product Matching Site in Team with proper responsiveness and fast query execution on 1 Million Data with MongoDB.<%= project[:desc] %></p>
+</div>
