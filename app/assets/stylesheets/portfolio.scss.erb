@@ -17,7 +17,7 @@
 
 .grid {
     display: flow-root;
-    margin: 0 10%;
+    margin: 0 5.5%;
 	position: relative;
 	-webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
 	transition: all 0.5s cubic-bezier(0,0,0.25,1);
@@ -57,11 +57,10 @@
 
 .grid figure {
 	margin: 20px;
-	display: flex;
-    justify-content: center;
-    height: 400px; /* or other desired height */
-    overflow: hidden;
-	/*display: inline-block;*/
+	display: block;
+  justify-content: center;
+  height: 400px; /* or other desired height */
+  overflow: hidden;
 	cursor: pointer;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -116,7 +115,8 @@
 
 .grid figure img {
 	display: block;
-	height: 100%;
+	width: 100%;
+	min-height: 100%;
 }
 
 .content,
@@ -166,33 +166,46 @@
 	top: 0;
 	width: 100%;
 	overflow: hidden;
-	height: 0;
 	opacity: 0;
 	background: #fff;
 	padding-top: 10px;
+	height: 100%;
+	.col-sm-8, .col-sm-4{
+		height: calc(100% - 100px);
+		.carousel-inner{
+			display: block;
+		  text-align: center;
+		  height: 100%;
+			.item{
+				height: 100%;
+				img {
+					height: 100%;
+				}
+			}
+			.item.active{
+				display: inline-block;
+			}
+		}
+		.carousel-indicators{
+			li{
+				border: 2px solid #820000;
+			}
+			li.active{
+				background-color: #ff9cad;
+			}
+		}
+		.carousel-control{
+			height: 100%;
+			width: 80px;
+		  display: table;
+		}
+	}
 }
 .content > div.show {
-	height: auto;
 	opacity: 1;	
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
-}
-.carousel-inner{
-	display: block;
-    text-align: center;
-}
-.carousel-inner>.item{
-	height: 400px;
-}
-.carousel-inner>.item.active{
-	display: inline-block;
-}
-.carousel-inner>.item>img {
-	height: 100%;
-}
-.carousel-control{
-	height: 400px;
-    display: table;
+	z-index: 12;
 }
 .carousel-control > span{
     display: table-cell;
@@ -274,9 +287,9 @@
 .myportfolio p.content-text {
 	text-align:center;
 	font-size:17px;
-	padding:0 100px 100px;
-	line-height:25px;
-	font-weight:400;
+	padding:0 20px;
+	line-height:30px;
+	font-weight:bold;
 	-webkit-transition: opacity 0.9s, -webkit-transform 0.9s;
 	transition: opacity 0.9s, transform 0.9s;
 }

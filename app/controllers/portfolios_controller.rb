@@ -7,18 +7,20 @@ class PortfoliosController < ApplicationController
       'carrierwave', 'fcm', 'spawnling', 'delayed_job', 'whenever', 'puma', 'capistrano', 'watir', 'selenium-webdriver',
       'ckeditor', 'rails-erd', 'redis', 'fog-aws', 'aws-sdk-s3', 'sitemap_generator', 'elasticsearch', 'dotenv-rails', 'stripe']
 
+    # url: 'https://www.highschoolzoom.com/'
+    # url: 'https://www.zenarbitrage.co/'
     @profesional_projects = 
       {
         name: 'HighSchoolZoom', 
-        images: ['highschoolzoom-home.png', 'highschoolzoom-school.png', 'highschoolzoom-video.png'], 
+        images: ['highschoolzoom_home_2.jpg', 'highschoolzoom-home.png', 'highschoolzoom-school.png', 'highschoolzoom_schoo_2.jpg', 'highschoolzoom_video_2.jpg', 'highschoolzoom_stream_2.jpg'], 
         desc: "Live Sports Streaming Site, Different Schools participate in different Maches and can do live streamm on this, anyone can watch live or recorded matches.",
-        url: 'https://www.highschoolzoom.com/'
+        url: ''
       }, 
       {
         name: 'Zen-Arbitrage', 
-        images: ['zen-arbitrage-home.png', 'zen-arbitrage-purchases.png', 'zen-arbitrage-marketplace.png'], 
+        images: ['zen-arbitrage-home-2.jpg', 'zen-arbitrage-home.png', 'zen-arbitrage-purchases.png', 'zen-arbitrage-marketplace.png'], 
         desc: "A stock exchange like site with Amazon's Data, Develop New feature, Implemented new Designs",
-        url: 'https://www.zenarbitrage.co/'
+        url: ''
       }, 
       {
         name: 'SouqOfQatar', 
@@ -27,20 +29,20 @@ class PortfoliosController < ApplicationController
         url: 'https://souqofqatar.com/'
       }, 
       {
-        name: 'ANA', 
+        name: 'Sample Admin Panel', 
         images: ['ANA1.png', 'ANA2.png', 'ANA3.png', 'ANA4.png', 'ANA5.png', 'ANA6.png', 'ANA7.png'], 
         desc: "Worked on Admin panel, GGoogle Mpas, geofencing and mobile site API development",
         url: 'http://admin-dashboard1.herokuapp.com/'
       }, 
       {
         name: 'Simulyx', 
-        images: ['simulyx1.png', 'simulyx2.png', 'simulyx3.png', 'simulyx4.png'], 
+        images: ['simulyx2.png', 'simulyx3.png', 'simulyx4.png'], 
         desc: "Freelancer Type Website for University",
         url: 'http://souqofqatar.com/'
       }, 
       {
         name: 'PropertyNerd', 
-        images: ['propertynerd1.png', 'propertynerd2.png', 'propertynerd3.png', 'propertynerd4.png', 'propertynerd5.png', 'propertynerd6.png'], 
+        images: ['property-nerd-home-1.jpg', 'propertynerd2.png', 'propertynerd3.png', 'propertynerd4.png', 'propertynerd5.png', 'propertynerd6.png'], 
         desc: "Worked on Individual Task with team colaboration.",
         url: 'https://www.propertynerd.com.au/'
       }
@@ -54,8 +56,14 @@ class PortfoliosController < ApplicationController
       {
         name: 'MapMaker', 
         images: ['mapmaker1.png', 'mapmaker2.png'], 
-        desc: "A simple site to draw polygons on map and store them on https://www.highschoolzoom.com/",
+        desc: "A simple site to draw polygons on map and store them on DB as serialized",
         url: 'https://mapdrawer.herokuapp.com/'
+      },
+      {
+        name: 'Slide-Selector Ruby Gem', 
+        images: ['range-selector.png'], 
+        desc: "Custom form field_tag of range-slider with text_field type selector. You can either choose from drop down or enter your own value and the slider will auto-adjust or you can use the slider to adjust values. This all through on form field f.slide_selector.",
+        url: 'https://rubygems.org/gems/slide-selector'
       }
   end
 
