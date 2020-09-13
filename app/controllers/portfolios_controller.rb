@@ -14,13 +14,13 @@ class PortfoliosController < ApplicationController
         name: 'HighSchoolZoom', 
         images: ['highschoolzoom_home_2.jpg', 'highschoolzoom-home.png', 'highschoolzoom-school.png', 'highschoolzoom_schoo_2.jpg', 'highschoolzoom_video_2.jpg', 'highschoolzoom_stream_2.jpg'], 
         desc: "Live Sports Streaming Site, Different Schools participate in different Maches and can do live streamm on this, anyone can watch live or recorded matches.",
-        url: ''
+        url: 'https://highschoolzoom.com/'
       }, 
       {
         name: 'Zen-Arbitrage', 
         images: ['zen-arbitrage-home-2.jpg', 'zen-arbitrage-home.png', 'zen-arbitrage-purchases.png', 'zen-arbitrage-marketplace.png'], 
         desc: "A stock exchange like site with Amazon's Data, Develop New feature, Implemented new Designs",
-        url: ''
+        url: 'https://www.zenarbitrage.co/'
       }, 
       {
         name: 'SouqOfQatar', 

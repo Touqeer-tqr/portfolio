@@ -30,8 +30,8 @@
 			</div>
 			<div class="services-grids">
 				<a class="fa fa-desktop" aria-hidden="true"></a>
-				<p class="para-agileits-w3layouts">Heroku, AWS (Amazon Web Services): Elastic Beanstalk, EC2, EB CLI, Scheduled Volumn Backup, RDS with autobackup, S3-Storage, S3-Backup, Glacier, CloudWatch, CloudFront, Elastic Load Balancer, Auto Scaling, Security...</p>
-				<h6>Web Services</h6>
+				<p class="para-agileits-w3layouts">Heroku, AWS (Amazon Web Services): Elastic Beanstalk, EC2, EB CLI, Scheduled Volumn Backup, RDS with autobackup, S3 with versioning, S3fs, Glacier, CloudWatch, CloudFront, VPN, VPC, Elastic Load Balancer, Auto Scaling, Security...</p>
+				<h6>DevOps</h6>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -40,15 +40,16 @@
 			<div class="about-border-w3ls">
 			</div>
 			<div class="person-info-agileits-w3layouts">
-				<p class="para-agileits-w3layouts"><span>Hi!, I am Touqeer Ahmad </span>I am a technology enthusiast.<br>I have extensive experience with Ruby on Rails, MongoDB, MySQL, Heroku, Amazon Web Services, Git, GitHub, Jquery, creating APIs, Google Map Integration, Polygon Construction, Mobile Push Notifications, Action Cable (Sockets), Web Crawlers, Slim/HTML5/CSS3, Bootstrap, Responsive Designs, Twilio etc</p><br>
-				<p>I am involved in most parts of the software life cycle i.e architecture designing, schema designing, and implementation.</p>
+				<p class="para-agileits-w3layouts"><span>Hi!, I am Touqeer Ahmad </span>I am a technology enthusiast.<br>I have extensive experience with Ruby on Rails, MongoDB, MySQL, Heroku, Amazon Web Services, APIs, Google Map Integration, Polygon Construction, Mobile Push Notifications, Action Cable (Sockets), Web Crawlers, Slim/HTML5/CSS3, Bootstrap 3/4, Responsive Designs, Twilio etc</p><br>
+				<p>I am involved in most parts of the software life cycle i.e architecture designing, schema designing, and implementation. From planning to production release.</p>
 				<ul>
+					<% age = (Time.now - Time.parse("13 June 1993"))/(60*60*24*365) %>
 					<li><span>Name</span>: Touqeer Ahmad</li>
-					<li><span>Age</span>: 25 Years</li>
-					<li><span>Experience</span>: +2 Years</li>
+					<li><span>Age</span>: <%= age.to_i %> Years</li>
+					<li><span>Experience</span>: +<%= Time.now.year - 2016 %> Years</li>
 					<li><span>Email</span>: <a href="mailto:tqr093@gmail.com">tqr093@gmail.com</a></li>
 					<li><span>Address</span>: Lahore, Pakistan</li>
-					<li><%= link_to 'Download CV', portfolios_download_cv_path, remote: true, class: "botton-w3ls" %></li>
+					<li><a class="botton-w3ls" target="_tab" href="/portfolios/download_cv">Resume</a></li>
 				</ul>
 				<div class="clearfix"></div>
 
