@@ -1,4 +1,4 @@
-/*--
+--
 Author: Touqeer Ahn=mad
 Author URL: http://touqeer-ahmad.herokuapp.com
 --*/
@@ -9,7 +9,8 @@ html,
 body {
 	margin: 0;
 	font-size: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Poppins,"Poppins",sans-serif;
+  -webkit-font-smoothing: antialiased;
 	background: #fff;
 }
 
@@ -71,11 +72,11 @@ label {
 
 .navbar {
 	margin-bottom: 0;
+	min-height: unset;
 }
 
 .navbar-nav {
 	float: right;
-	margin-top: 0.5em;
 }
 
 .w3-logo {
@@ -127,10 +128,20 @@ label {
 }
 
 header {
-	padding: 22px 0px 0;
-	width: 100%;
+	padding: 0;
+	width: fit-content;
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	background: #0000008c;
 }
-
+.about-w3layouts#about{
+	font: 19px/23px Poppins,"Poppins",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;	
+}
 .w3-slider {
 	height: 700px;
 	position: relative;
@@ -144,21 +155,50 @@ header {
 	margin-left: 2.3em;
 }
 .banner-text-w3-agileits {
-	margin-top: 5.5em;
+	margin-top: 5em;
 	float: right;
 	width: 100%;
 }
-.tech-logos{
-	margin-top: 4em;
+.it-fields{
+	margin-top: 80px;
+	width: 480px;
+	float: right;
+	text-align: center;
 }
-.tech-logos>.col-md-2>img{
-	height: 95px;
+.it-fields-left{
+	margin-top: 65px;
+	width: 480px;
+	float: left;
+}
+.it-fields > div{
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.it-fields > div > p{
+	color:  white;
+}
+.it-fields > div > p > span{
+	background: white;
+	padding: 0px 8px;
+}
+
+.rails-logo{
+	margin-left:  200px;
+}
+.ror-logo{
+  height: 260px !important;
+  position: absolute;
+  margin-left: -73px;
+  margin-top: 46px;
+  width: 330px;
 }
 
 .banner-text-w3-agileits span {
 	color: #fff;
 	letter-spacing: 3px;
-	font-weight: 400;
+	font-weight: bold;
 }
 .banner-text-w3-agileits > p > span {
 	font-size: 1.7em;
@@ -190,9 +230,9 @@ header {
 	-webkit-text-fill-color: transparent;
 }
 .profile-pic{
-	width: 280px;
-	height: 280px;
-	border: double 6px transparent;
+	width: 450px;
+	height: 450px;
+	border: double 4px transparent;
 	border-radius: 50%;
 	background-image: linear-gradient(white, white), radial-gradient(circle at top right, red,orange);
 	background-origin: border-box;
@@ -201,16 +241,16 @@ header {
 	left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: 3%;
+    bottom: 6%;
 }
 .banner-text-w3-agileits p {
-	font-size: 1em;
+	font-size: 18px;
 	letter-spacing: 7px;
 	font-weight: 400;
 	background: rgba(0, 0, 0, 0.32);
-	padding: 4px 14px;
-	border-bottom-left-radius: 20PX;
-	border-top-right-radius: 20px;
+	padding: 0px;
+	line-height: 25px;
+	font-variant: small-caps;
 }
 
 .banner-text-w3-agileits p span{
@@ -357,21 +397,19 @@ nav.shift ul li a:hover:after {
 }
 
 .navbar-default .navbar-nav>li>a {
-	font-size: 13px!important;
+	font-size: 35px;
 	letter-spacing: 1.5px;
 	color: #fff!important;
 	background: transparent;
 	padding: 8px 15px;
-	font-weight: 600;
+	background: -webkit-linear-gradient(red, orange);
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent;
 }
 
 .navbar-nav>li {
 	float: left;
-	margin: 0 22px;
-}
-
-.navbar-nav>li:nth-child(5) {
-	margin-right: 0px!important;
+	margin: 8px 6px;
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -408,13 +446,15 @@ nav.shift ul li a:hover:after {
 /*-- //header --*/
 
 .banner {
-	background: url('<%= asset_path("banner.jpg")%>')no-repeat 0px -40px;
+	background: url('<%= asset_path("banner.jpg")%>')no-repeat 0px -90px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
 	background-size: cover;
-	min-height: 795px;
+	height: 100vh;
+	min-height: 700px;
+	max-height: 800px;
 	position: relative;
 }
 
@@ -502,7 +542,7 @@ h5.title-w3 {
 	font-size: 2.2em;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 0.7em 0 1em;
+	margin: 0;
 	color: #000;
 	letter-spacing: 2px;
 	word-spacing: 2px;
@@ -511,12 +551,13 @@ h5.title-w3 {
 	display: inline-block;
 }
 
+h5.title-w3 > b{
+	padding-left: 35px;
+}
+
 h5.title-w3 span {
 	display: block;
 	font-size: 15px;
-	position: absolute;
-	left: -16%;
-	top: -70%;
 	width: 100px;
 	text-align: left;
 	padding: 5px 0px 5px 9px;
@@ -617,16 +658,15 @@ h3.subheading-agileits-w3layouts {
 /*-- about-left --*/
 
 .services-grids {
-	width: 100%;
-	float: left;
+	/*width: 100%;*/
+	/*float: left;*/
 	text-align: center;
 	box-shadow: -2px 2px 6px #737373;
-	position: relative;
+	/*position: relative;*/
 }
 
 .services-grids p {
 	color: rgba(33, 33, 33, 0.8);
-	margin: 0.6em;
 }
 
 .services-grids h6 {
@@ -644,20 +684,14 @@ h3.subheading-agileits-w3layouts {
 
 .services-grids:hover h6 {
 	background: -webkit-linear-gradient(darkred, orange);
-	border-bottom: 4px solid #000;
-	transition: all 0.7s ease-in-out;
-	-webkit-transition: all 0.7s ease-in-out;
-	-moz-transition: all 0.7s ease-in-out;
-	-o-transition: all 0.7s ease-in-out;
-	-ms-transition: all 0.7s ease-in-out;
 }
 
 .services-grids a {
 	background: -webkit-linear-gradient(red, orange);
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent;
-	font-size: 2em;
-	margin-top: 15px;
+	font-size: 50px;
+	margin-top: 8px;
 }
 
 .services-grids:hover {
@@ -686,15 +720,15 @@ h3.subheading-agileits-w3layouts {
 }
 
 .about-border-w3ls {
-	position: absolute;
+	/*position: absolute;*/
 	padding: 26.75em 21em;
-	border: 24px solid #000;
+	border: 16px solid #000;
 	border-top-right-radius: 100px;
 	border-bottom-left-radius: 100px;
 }
 
 .person-info-agileits-w3layouts {
-	padding: 3em 4em;
+	padding: 2em 0em;
 	background: var(--main-secondary-color-main);
 	position: absolute;
 	left: 3em;
@@ -702,7 +736,8 @@ h3.subheading-agileits-w3layouts {
 	box-shadow: -3px 7px 15px rgba(21, 21, 21, 0.38);
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 50px;
-	width: 82%;
+	/*width: 82%;*/
+	width: calc(100% - 100px);
 }
 
 .person-info-agileits-w3layouts ul {
@@ -712,7 +747,7 @@ h3.subheading-agileits-w3layouts {
 .person-info-agileits-w3layouts ul li {
 	list-style: none;
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 6px;
 	color: #fff;
 	text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.62);
 	font-size: 16px;
@@ -765,14 +800,58 @@ h3.subheading-agileits-w3layouts {
 	font-weight: 600;
 }
 
+.person-info-agileits-w3layouts > .person-info-agileits-w3layouts p {
+	min-height: 100px;
+}
 .person-info-agileits-w3layouts p {
 	color: #303030;
 	font-size: 14px;
-	letter-spacing: .8px;
-	line-height: 30px;
+	letter-spacing: 0.8px;
+	line-height: 23px;
 	width: 100%;
+	padding: 8px 12px;
+	text-align: left;
 }
 
+#about, #skills{
+	display: flow-root;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 35px 0px;
+}
+
+
+.span-b-8{
+	display: inline-block;
+  padding-bottom: 8px;
+}
+
+.grey-text-style{
+  color: #868e96 !important;
+  line-height: 1.5em !important;
+  text-align: left;
+  font-size: 20px;
+}
+
+.second-block{
+	margin-top: 15px;
+	padding: 35px;
+	border: 16px solid #000;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+
+.skills-details{
+	padding: 35px 20px;
+  background: var(--main-secondary-color-main);
+  box-shadow: -3px 7px 15px rgb(21 21 21 / 38%);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.skills-details p.para-agileits-w3layouts{
+	height: 100px;
+}
 
 /*-- //about-right --*/
 
@@ -1417,6 +1496,9 @@ h3.subheading-agileits-w3layouts {
 	filter: alpha(opacity=0);
 }
 
+.about-left-agileits > div > .services-grids{
+	background: white;
+}
 
 /*-- //to-top --*/
 
@@ -1437,7 +1519,7 @@ h3.subheading-agileits-w3layouts {
 		margin-top: 2em;
 	}
 	.tech-logos{
-		margin-top: 1.2em;
+		margin-top: 60px;
 	}
 	.ror-pic{
 		top: 13.5em;
@@ -1486,9 +1568,6 @@ h3.subheading-agileits-w3layouts {
 	.edu-img-agileits,
 	.exp-img-agileits {
 		min-height: 429px;
-	}
-	.navbar-nav>li{
-		margin: 0 12px;
 	}
 }
 
@@ -1561,9 +1640,6 @@ h3.subheading-agileits-w3layouts {
 	.navbar-default .navbar-nav>li>a {
 		font-size: 12px!important;
 		padding: 8px 12px;
-	}
-	.navbar-nav>li {
-		margin: 0 3.5px;
 	}
 	.w3-logo a {
 		letter-spacing: 3px;
@@ -1710,9 +1786,6 @@ h3.subheading-agileits-w3layouts {
 	    padding-left: 3.5em;
 	    top: 11em;
 	}
-	.navbar-nav>li {
-	    margin: 0px 0px;
-	}
 	.profile-pic {
 	    width: 200px;
 	    height: 200px;
@@ -1753,7 +1826,6 @@ h3.subheading-agileits-w3layouts {
 @media(max-width:767px) {
 	.navbar-nav {
 		float: none;
-		margin: 10px!important;
 	}
 	.navbar-default .navbar-toggle {
 		border-color: var(--main-secondary-color-main);
@@ -1795,10 +1867,6 @@ h3.subheading-agileits-w3layouts {
 		float: none;
 		display: block;
 		text-align: center;
-		margin-bottom: 10px;
-	}
-	.navbar-nav>li:nth-child(5) {
-		margin-bottom: 0!important;
 	}
 	.navbar-toggle {
 		margin-top: 10px;
@@ -1809,9 +1877,6 @@ h3.subheading-agileits-w3layouts {
 		font-size: 12px!important;
 		padding: 8px 12px;
 		display: inline-block;
-	}
-	.navbar-nav>li {
-		margin: 0 0 10px;
 	}
 	.about-border-w3ls {
 		border: 15px solid #000;
@@ -2192,4 +2257,4 @@ h3.subheading-agileits-w3layouts {
 }
 
 
-/*--responsive--*/
+/*--responsive--

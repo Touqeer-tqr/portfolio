@@ -1,32 +1,38 @@
-<div class="tech-logos row">
-	<div class="col-md-2 col-xs-2">
-		<%= image_tag "ruby-logo.png" %>
+<div class="tech-logos">
+	<div>
+	  <%= image_tag "ruby-logo.png" %>
+		<%= image_tag "ruby-on-rails.png", class: "ror-logo" %>
+	  <%= image_tag "rails-logo.png", class: "rails-logo"  %>
 	</div>
-	<div class="col-md-2 col-xs-2 text-right">
-		<%= image_tag "rails-logo.png" %>
-	</div>
-	<div class="col-md-2 col-xs-3 text-center">
-		<%= image_tag "aws-logo.png" %>
-	</div>
-	<div class="col-md-2 col-xs-3 text-right">
-		<%= image_tag "docker.svg" %>
-	</div>
-	<div class="col-md-2 col-xs-2 text-right">
-		<%= image_tag "ruby-mine-logo.png" %>
-	</div>
-	<div class="col-md-2 col-xs-2 text-right">
-		<%= image_tag "ubuntu-logo.png" %>
-	</div>
+	<%= image_tag "aws-logo.png" %>
+	<%= image_tag "docker.svg" %>
+	<%= image_tag "k8s.png" %>
+	<%= image_tag "ruby-mine-logo.png" %>
+	<%= image_tag "ubuntu-logo.png" %>
 </div>
 <div class="banner-text-w3-agileits">
-	<%= image_tag "ruby-on-rails.png", class:"ror-pic" %>
 	<div style="float: right">
 		<span>Hi, I'm</span>
 		<h1><span>T</span>ouqeer <span>A</span>hmad</h1>
-		<p><span>Software Engineer (ROR, AWS, DevOps)</span></p>
-		<div class="botton">
-			<a href="#about" class="scroll">About me <span class="fa fa-caret-right"></span></a>
-		</div>
 	</div>
 </div>
- <%= image_tag "profile-2.jpg", alt: "touqeer ahmad, tqr, profile-pic", itemprop: "image", og: "image", class: "profile-pic" %> 
+<div class="banner-text-w3-agileits it-fields">
+	<div>
+		<p><span>Ruby on Rails</span></p>
+		<p><span>Developer</span></p>
+	</div>
+</div>
+<div class="banner-text-w3-agileits it-fields it-fields-left">
+	<div>
+		<p><span>+<%= Time.now.year - 2016 %> Year of Experience</span></p>
+		<p>as</p>
+		<p><span>Senior Technical Lead</span></p>
+		<p>&</p>
+		<p><span>DevOps Engineer</span></p>
+		<p><span>(AWS, Docker, K8s)</span></p>
+	</div>
+</div>
+<%= image_tag "profile-2.jpg", alt: "touqeer ahmad, tqr, profile-pic", itemprop: "image", og: "image", class: "profile-pic" %> 
+<div class="cover-location">
+	<p>Kuala Lumpur, Malaysia</p>
+</div>
