@@ -406,6 +406,25 @@
   height: 100px;
 }
 
+.scrollbar {
+  height: 250px;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar-track {
+  background: -webkit-linear-gradient(red, orange);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffffab;
+}
+
 @media screen and (max-width: 1000px) {
 
   .grid figure,
